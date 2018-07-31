@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC9.Common", "Mindshift.SC9.Common\Mindshift.SC9.Common.csproj", "{41E6EFC3-9314-4E4E-9AF2-EC6A39ED804C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC9.DatasourceContentTab", "Mindshift.SC9.DatasourceContentTab\Mindshift.SC9.DatasourceContentTab.csproj", "{2B3AA960-8DD5-4C9E-A07C-514F3E878427}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C63B9D8C-2C95-4914-949B-8CED26757761}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatasourceContentTab", "DatasourceContentTab", "{94CEEA76-7995-41F7-9CE3-279AE2544AD4}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC9.DatasourceContentTab.TDS.Build", "Mindshift.SC9.DatasourceContentTab.TDS.Build\Mindshift.SC9.DatasourceContentTab.TDS.Build.scproj", "{093CCDA7-1249-4951-829C-F201D4B7ED62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicLayoutDetails", "DynamicLayoutDetails", "{E4918DFB-5E02-4F8B-9404-90BF9EAE1F59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC9.DynamicLayoutDetails", "Mindshift.SC9.DynamicLayoutDetails\Mindshift.SC9.DynamicLayoutDetails.csproj", "{51ABFE32-5F68-4634-AC62-F40EC454DD9B}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC9.DynamicLayoutDetails.TDS.Build", "Mindshift.SC9.DynamicLayoutDetails.TDS.Build\Mindshift.SC9.DynamicLayoutDetails.TDS.Build.scproj", "{AC2A9B5E-814D-44CA-A423-916976C082D7}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC9.Common.TDS.Core", "Mindshift.SC9.Common.TDS.Core\Mindshift.SC9.Common.TDS.Core.scproj", "{9D97F769-D107-4103-AD7E-2E74CC402A4A}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC9.Common.TDS.Master", "Mindshift.SC9.Common.TDS.Master\Mindshift.SC9.Common.TDS.Master.scproj", "{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC9.DynamicLayoutDetails.TDS.Core", "Mindshift.SC9.DynamicLayoutDetails.TDS.Core\Mindshift.SC9.DynamicLayoutDetails.TDS.Core.scproj", "{D78BA185-55B6-4CAA-9830-759FADE9B286}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41E6EFC3-9314-4E4E-9AF2-EC6A39ED804C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E6EFC3-9314-4E4E-9AF2-EC6A39ED804C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E6EFC3-9314-4E4E-9AF2-EC6A39ED804C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E6EFC3-9314-4E4E-9AF2-EC6A39ED804C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3AA960-8DD5-4C9E-A07C-514F3E878427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3AA960-8DD5-4C9E-A07C-514F3E878427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3AA960-8DD5-4C9E-A07C-514F3E878427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3AA960-8DD5-4C9E-A07C-514F3E878427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093CCDA7-1249-4951-829C-F201D4B7ED62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093CCDA7-1249-4951-829C-F201D4B7ED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093CCDA7-1249-4951-829C-F201D4B7ED62}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{093CCDA7-1249-4951-829C-F201D4B7ED62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093CCDA7-1249-4951-829C-F201D4B7ED62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093CCDA7-1249-4951-829C-F201D4B7ED62}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{51ABFE32-5F68-4634-AC62-F40EC454DD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51ABFE32-5F68-4634-AC62-F40EC454DD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51ABFE32-5F68-4634-AC62-F40EC454DD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51ABFE32-5F68-4634-AC62-F40EC454DD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2A9B5E-814D-44CA-A423-916976C082D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2A9B5E-814D-44CA-A423-916976C082D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2A9B5E-814D-44CA-A423-916976C082D7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC2A9B5E-814D-44CA-A423-916976C082D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2A9B5E-814D-44CA-A423-916976C082D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2A9B5E-814D-44CA-A423-916976C082D7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9D97F769-D107-4103-AD7E-2E74CC402A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D97F769-D107-4103-AD7E-2E74CC402A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D97F769-D107-4103-AD7E-2E74CC402A4A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9D97F769-D107-4103-AD7E-2E74CC402A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D97F769-D107-4103-AD7E-2E74CC402A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D97F769-D107-4103-AD7E-2E74CC402A4A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41E6EFC3-9314-4E4E-9AF2-EC6A39ED804C} = {C63B9D8C-2C95-4914-949B-8CED26757761}
+		{2B3AA960-8DD5-4C9E-A07C-514F3E878427} = {94CEEA76-7995-41F7-9CE3-279AE2544AD4}
+		{093CCDA7-1249-4951-829C-F201D4B7ED62} = {94CEEA76-7995-41F7-9CE3-279AE2544AD4}
+		{51ABFE32-5F68-4634-AC62-F40EC454DD9B} = {E4918DFB-5E02-4F8B-9404-90BF9EAE1F59}
+		{AC2A9B5E-814D-44CA-A423-916976C082D7} = {E4918DFB-5E02-4F8B-9404-90BF9EAE1F59}
+		{9D97F769-D107-4103-AD7E-2E74CC402A4A} = {C63B9D8C-2C95-4914-949B-8CED26757761}
+		{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4} = {C63B9D8C-2C95-4914-949B-8CED26757761}
+		{D78BA185-55B6-4CAA-9830-759FADE9B286} = {E4918DFB-5E02-4F8B-9404-90BF9EAE1F59}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48A22CC3-CC01-4719-B490-AD4B3EAFDD99}
+	EndGlobalSection
+EndGlobal

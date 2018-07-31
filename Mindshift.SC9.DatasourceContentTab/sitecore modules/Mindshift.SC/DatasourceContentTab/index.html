@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>test</title>
+</head>
+<body>
+	<!-- TODO: move to non-cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-router"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.0"></script>
+	<div id="app">
+		<div v-if="dynamicResponse!=null">
+			Id: {{dynamicResponse.ItemId}}
+			<ul class="nav nav-tabs">
+				<li class="nav-item" v-for="layoutType in dynamicResponse.LayoutTypes">
+					<a :class="['nav-link', { active: view.currentLayoutType==layoutType.Name }]" :href="'#'+layoutType.Name" @click="selectLayoutType(layoutType)">{{layoutType.DisplayName}}</a>
+				</li>
+			</ul>
+			<div>
+				<ul>
+					<li v-for="device in view.currentLayoutType.Devices">
+						<div class="arrow" @click="setOpenState(device)"><span :class="['glyphicon', getOpenState(device) ? 'glyphicon-menu-down': 'glyphicon-menu-right']"></span></div>
+						<div class="listbody">
+							<span v-html="device.Icon"></span>
+							{{device.DisplayName}} ({{device.Placeholders.length}})
+							<ul v-if="getOpenState(device)">
+								<li v-for="placeholder in device.Placeholders">
+									<div :class="['title', 'placeholder-title', placeholder.Exists ? 'valid': 'invalid']">
+										<span v-html="placeholder.Icon"></span>
+										{{placeholder.Name}}
+								<li ng-repeat="rendering in placeholder.Renderings" title="uniqueId: {{rendering.UniqueId}}">
+									<div class="title">
+										{{rendering.OrderBy}}
+										<span ng-bind-html="rendering.Icon"></span>
+										{{rendering.DisplayName}} ({{rendering.Placeholders.length}})
+									</div>
+									<div class="edit-panel" v-if="getEditState(rendering)">
+										<table>
+											<tbody>
+												<tr>
+													<th>UniqueId:</th>
+													<td>{{rendering.UniqueId}}</td>
+												</tr>
+												<tr>
+													<th>Datasource:</th>
+													<td><input type="text" ng-model="rendering.DataSourcePath" id="FIELD77739897" /></td>
+												</tr>
+												<tr>
+													<th>Placeholder Path:</th>
+													<td><input type="text" ng-model="rendering.PlaceholderPath" /></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

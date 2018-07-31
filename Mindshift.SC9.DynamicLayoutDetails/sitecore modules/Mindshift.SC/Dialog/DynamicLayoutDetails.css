@@ -1,0 +1,143 @@
+﻿html, body {
+	height: 100%;
+	position: relative;
+}
+
+div#app {
+	height: 100%;
+}
+
+div.dialog-page {
+	height: calc(100% - 82px);
+}
+
+div.wrapper {
+	height: 100%;
+}
+
+.layout-list {
+	background-color: #fff;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+	.layout-list ul {
+		list-style: none;
+	}
+
+		.layout-list ul li {
+			position: relative;
+		}
+
+	.layout-list div.title {
+		position: relative;
+	}
+
+		.layout-list div.title.invalid {
+			color: red;
+		}
+
+	.layout-list .glyphicon-remove {
+		color: red;
+	}
+
+
+	.layout-list div.arrow {
+		float: left;
+		position: absolute;
+		left: -15px;
+		top: 6px;
+	}
+
+	.layout-list button.active {
+		background-color: #131313;
+	}
+
+	.layout-list div.list-body {
+	}
+
+	.layout-list div.edit-panel {
+		border: 1px solid #474747;
+		background-color: #fff;
+		padding: 3px;
+		position: relative;
+		left: 0;
+	}
+
+		.layout-list div.edit-panel input {
+			width: 500px;
+		}
+
+	.layout-list .placeholder-title .new-position {
+		min-height: 5px;
+		display: none;
+	}
+
+	.layout-list .placeholder-title:hover .new-position {
+		display: block;
+		position: absolute;
+		left: -20px;
+	}
+
+	.layout-list .title .new-position button {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
+
+	.layout-list .title:hover .new-position button {
+		display: inline-block;
+	}
+
+
+	.layout-list .new-position button {
+		display: none;
+	}
+
+	.layout-list .new-position:hover button {
+		display: inline-block;
+	}
+
+.footer {
+	margin-top: 5px;
+	background-color: #131313;
+	padding: 5px;
+	height: 41px;
+    position: absolute;
+    bottom: 0;
+	width: 100%;
+}
+
+iframe.datasource-frame {
+	width: 100%;
+	height: 520px;
+}
+
+
+.add-rendering-panel {
+	border: 1px solid #474747;
+	background-color: #fff;
+	padding-left: 10px;
+}
+
+
+	.add-rendering-panel li:hover {
+		background-color: #cacace;
+	}
+ul.nav-tabs {
+	height: 41px;
+
+}
+	
+ul.nav-tabs li a.active {
+	font-weight: bold;
+}
+
+td, th {
+	vertical-align:  top;
+}
+
+th {
+	white-space: nowrap;
+}

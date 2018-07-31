@@ -1,0 +1,140 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>240a30b6-fc96-4cf5-acb3-0d9bfa3a99c4</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>
+    </SourceWebPhysicalPath>
+    <SourceWebProject>
+    </SourceWebProject>
+    <SourceWebVirtualPath>
+    </SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Mindshift.SC9.Common.TDS.Master</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>Mindshift.SC9.Common.TDS.Master</AssemblyName>
+    <Name>Mindshift.SC9.Common.TDS.Master</Name>
+    <RootNamespace>Mindshift.SC9.Common.TDS.Master</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\system.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Mindshift SC.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates.item" />
+    <SitecoreItem Include="sitecore\templates\Mindshift SC.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Common.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Common\Enumeration Folder.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Common\Enumeration Folder\__Standard Values.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Common\Enumeration.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Common\Enumeration\Enumeration Data.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Common\Enumeration\Enumeration Data\Fields To Hide.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Common\Enumeration\Enumeration Data\Value.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Common\Mindshift SC Folder.item">
+      <ChildItemSynchronization>
+      </ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>
+      </ItemDeployment>
+    </SitecoreItem>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+</Project>

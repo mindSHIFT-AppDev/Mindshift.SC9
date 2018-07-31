@@ -1,0 +1,107 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ac2a9b5e-814d-44ca-a423-916976c082d7</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Mindshift.SC9.DynamicLayoutDetails.TDS.Build</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>Mindshift.SC9.DynamicLayoutDetails.TDS.Build</AssemblyName>
+    <Name>Mindshift.SC9.DynamicLayoutDetails.TDS.Build</Name>
+    <RootNamespace>Mindshift.SC9.DynamicLayoutDetails.TDS.Build</RootNamespace>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Include</AssemblyStatus>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Mindshift.SC9.DynamicLayoutDetails</PackageName>
+    <PackageAuthor>Frank Rizzi</PackageAuthor>
+    <PackagePublisher>mindSHIFT Technologies</PackagePublisher>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>False</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Mindshift.SC9.DynamicLayoutDetails.1.0</PackageName>
+    <PackageAuthor>Frank Rizzi</PackageAuthor>
+    <PackagePublisher>mindSHIFT Technologies</PackagePublisher>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <SourceWebProjects Include="{41e6efc3-9314-4e4e-9af2-ec6a39ed804c}|Mindshift.SC9.Common\Mindshift.SC9.Common.csproj">
+      <SourceWebPhysicalPath>..\Mindshift.SC9.Common</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/Mindshift.SC9.Common.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>41e6efc3-9314-4e4e-9af2-ec6a39ed804c</SourceWebProjectId>
+    </SourceWebProjects>
+    <SourceWebProjects Include="{51abfe32-5f68-4634-ac62-f40ec454dd9b}|Mindshift.SC9.DynamicLayoutDetails\Mindshift.SC9.DynamicLayoutDetails.csproj">
+      <SourceWebPhysicalPath>..\Mindshift.SC9.DynamicLayoutDetails</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/Mindshift.SC9.DynamicLayoutDetails.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>51abfe32-5f68-4634-ac62-f40ec454dd9b</SourceWebProjectId>
+    </SourceWebProjects>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mindshift.SC9.Common.TDS.Core\Mindshift.SC9.Common.TDS.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Mindshift.SC9.Common.TDS.Master\Mindshift.SC9.Common.TDS.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Mindshift.SC9.Common\Mindshift.SC9.Common.csproj">
+      <Project>{41e6efc3-9314-4e4e-9af2-ec6a39ed804c}</Project>
+      <Name>Mindshift.SC9.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mindshift.SC9.DynamicLayoutDetails.TDS.Core\Mindshift.SC9.DynamicLayoutDetails.TDS.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Mindshift.SC9.DynamicLayoutDetails\Mindshift.SC9.DynamicLayoutDetails.csproj">
+      <Project>{51abfe32-5f68-4634-ac62-f40ec454dd9b}</Project>
+      <Name>Mindshift.SC9.DynamicLayoutDetails</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Mindshift.SC9.%2a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\Mindshift.SC9.Common.TDS.Core\Mindshift.SC9.Common.TDS.Core.scproj">
+      <ProjectId>{9d97f769-d107-4103-ad7e-2e74cc402a4a}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\Mindshift.SC9.Common.TDS.Master\Mindshift.SC9.Common.TDS.Master.scproj">
+      <ProjectId>{240a30b6-fc96-4cf5-acb3-0d9bfa3a99c4}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\Mindshift.SC9.DynamicLayoutDetails.TDS.Core\Mindshift.SC9.DynamicLayoutDetails.TDS.Core.scproj">
+      <ProjectId>{d78ba185-55b6-4caa-9830-759fade9b286}</ProjectId>
+    </BundledProject>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+</Project>
