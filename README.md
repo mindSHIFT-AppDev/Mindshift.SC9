@@ -22,7 +22,7 @@ These projects contain items, classes and files that are shared between all modu
 3. Base classes for Web API Controllers, Mappings, Pipelines.
 4. Custom Field Types, Enumerations, Dialogs.
 
-### Dynamic Placeholders
+### Dynamic Layout Details
 Status: Complete and working.
 
 Description: Adds another button in the Ribbon at Presentation -> Layout named "Dynamic". This brings up a dialog very similar to the Details dialog, but it shows all the Renderings in a tree format. This way you can see where each rendering is in the presentation hierarchy. The current version 1.0 is read only until I rewrite the save routing to be compatible with the new XML in Sitecore 9.
