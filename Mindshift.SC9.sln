@@ -25,6 +25,10 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC9.Common.TDS.Ma
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC9.DynamicLayoutDetails.TDS.Core", "Mindshift.SC9.DynamicLayoutDetails.TDS.Core\Mindshift.SC9.DynamicLayoutDetails.TDS.Core.scproj", "{D78BA185-55B6-4CAA-9830-759FADE9B286}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PackageInstaller", "PackageInstaller", "{7FB9631C-4D26-4BCF-BA2F-71B450ACFF72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC9.PackageInstaller", "Mindshift.SC9.PackageInstaller\Mindshift.SC9.PackageInstaller.csproj", "{72FFB1BE-6697-4F5F-9ED6-492AC946215A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +77,10 @@ Global
 		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D78BA185-55B6-4CAA-9830-759FADE9B286}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{72FFB1BE-6697-4F5F-9ED6-492AC946215A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FFB1BE-6697-4F5F-9ED6-492AC946215A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FFB1BE-6697-4F5F-9ED6-492AC946215A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FFB1BE-6697-4F5F-9ED6-492AC946215A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,7 @@ Global
 		{9D97F769-D107-4103-AD7E-2E74CC402A4A} = {C63B9D8C-2C95-4914-949B-8CED26757761}
 		{240A30B6-FC96-4CF5-ACB3-0D9BFA3A99C4} = {C63B9D8C-2C95-4914-949B-8CED26757761}
 		{D78BA185-55B6-4CAA-9830-759FADE9B286} = {E4918DFB-5E02-4F8B-9404-90BF9EAE1F59}
+		{72FFB1BE-6697-4F5F-9ED6-492AC946215A} = {7FB9631C-4D26-4BCF-BA2F-71B450ACFF72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48A22CC3-CC01-4719-B490-AD4B3EAFDD99}
